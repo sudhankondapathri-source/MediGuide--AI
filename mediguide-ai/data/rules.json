@@ -1,0 +1,52 @@
+{
+  "rules": [
+    {
+      "id": "R1",
+      "if_symptoms": ["fever", "cough", "fatigue"],
+      "then_condition": "Flu",
+      "confidence_note": "All three symptoms present strongly suggest Flu"
+    },
+    {
+      "id": "R2",
+      "if_symptoms": ["fever", "cough"],
+      "then_condition": "Common Cold",
+      "confidence_note": "Fever with cough alone, no fatigue"
+    },
+    {
+      "id": "R3",
+      "if_symptoms": ["fever", "cough", "breathlessness"],
+      "then_condition": "Respiratory Infection",
+      "confidence_note": "Breathlessness with fever/cough raises respiratory concern"
+    },
+    {
+      "id": "R4",
+      "if_symptoms": ["headache", "fatigue", "nausea"],
+      "then_condition": "Migraine",
+      "confidence_note": "Classic migraine triad"
+    },
+    {
+      "id": "R5",
+      "if_symptoms": ["fever", "headache", "rash"],
+      "then_condition": "Viral Exanthem",
+      "confidence_note": "Fever + headache + rash pattern"
+    },
+    {
+      "id": "R6",
+      "if_symptoms": ["fatigue", "headache"],
+      "then_condition": "Stress / Fatigue Syndrome",
+      "confidence_note": "Non-specific but common combination"
+    },
+    {
+      "id": "R7",
+      "if_symptoms": ["cough", "breathlessness"],
+      "then_condition": "Asthma Flare",
+      "confidence_note": "Cough with breathlessness, no fever"
+    },
+    {
+      "id": "R8",
+      "if_symptoms": ["nausea", "fatigue", "fever"],
+      "then_condition": "Gastroenteritis",
+      "confidence_note": "GI-related symptom cluster"
+    }
+  ]
+}

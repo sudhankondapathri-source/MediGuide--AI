@@ -1,0 +1,61 @@
+{
+  "diseases": {
+    "Flu": {
+      "prior": 0.20,
+      "symptom_given_disease": {
+        "fever": 0.85, "cough": 0.75, "fatigue": 0.80,
+        "breathlessness": 0.15, "headache": 0.40, "nausea": 0.10, "rash": 0.02
+      }
+    },
+    "Common Cold": {
+      "prior": 0.30,
+      "symptom_given_disease": {
+        "fever": 0.40, "cough": 0.70, "fatigue": 0.30,
+        "breathlessness": 0.05, "headache": 0.20, "nausea": 0.05, "rash": 0.01
+      }
+    },
+    "Respiratory Infection": {
+      "prior": 0.10,
+      "symptom_given_disease": {
+        "fever": 0.70, "cough": 0.80, "fatigue": 0.50,
+        "breathlessness": 0.65, "headache": 0.20, "nausea": 0.05, "rash": 0.01
+      }
+    },
+    "Migraine": {
+      "prior": 0.12,
+      "symptom_given_disease": {
+        "fever": 0.05, "cough": 0.02, "fatigue": 0.55,
+        "breathlessness": 0.02, "headache": 0.90, "nausea": 0.60, "rash": 0.01
+      }
+    },
+    "Viral Exanthem": {
+      "prior": 0.05,
+      "symptom_given_disease": {
+        "fever": 0.75, "cough": 0.10, "fatigue": 0.30,
+        "breathlessness": 0.05, "headache": 0.45, "nausea": 0.10, "rash": 0.85
+      }
+    },
+    "Stress / Fatigue Syndrome": {
+      "prior": 0.13,
+      "symptom_given_disease": {
+        "fever": 0.05, "cough": 0.05, "fatigue": 0.80,
+        "breathlessness": 0.05, "headache": 0.55, "nausea": 0.15, "rash": 0.01
+      }
+    },
+    "Asthma Flare": {
+      "prior": 0.06,
+      "symptom_given_disease": {
+        "fever": 0.10, "cough": 0.70, "fatigue": 0.30,
+        "breathlessness": 0.85, "headache": 0.10, "nausea": 0.02, "rash": 0.01
+      }
+    },
+    "Gastroenteritis": {
+      "prior": 0.04,
+      "symptom_given_disease": {
+        "fever": 0.55, "cough": 0.05, "fatigue": 0.60,
+        "breathlessness": 0.05, "headache": 0.20, "nausea": 0.85, "rash": 0.02
+      }
+    }
+  },
+  "symptom_prior_if_absent_note": "For any symptom NOT listed as present, we use (1 - P(symptom|disease)) in the Bayes computation."
+}

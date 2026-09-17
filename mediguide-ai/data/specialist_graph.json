@@ -1,0 +1,23 @@
+{
+  "condition_to_specialist": {
+    "Flu": "General Physician",
+    "Common Cold": "General Physician",
+    "Respiratory Infection": "Pulmonologist",
+    "Migraine": "Neurologist",
+    "Viral Exanthem": "Dermatologist",
+    "Stress / Fatigue Syndrome": "General Physician",
+    "Asthma Flare": "Pulmonologist",
+    "Gastroenteritis": "Gastroenterologist"
+  },
+  "graph": {
+    "Reception": {"General Physician": 1, "Pharmacy": 1},
+    "Pharmacy": {"Reception": 1, "General Physician": 2},
+    "General Physician": {"Reception": 1, "Pharmacy": 2, "Pulmonologist": 2, "Neurologist": 3, "Gastroenterologist": 2},
+    "Pulmonologist": {"General Physician": 2, "Radiology": 1},
+    "Neurologist": {"General Physician": 3, "Radiology": 2},
+    "Dermatologist": {"Reception": 2, "General Physician": 4},
+    "Gastroenterologist": {"General Physician": 2, "Radiology": 3},
+    "Radiology": {"Pulmonologist": 1, "Neurologist": 2, "Gastroenterologist": 3}
+  },
+  "start_node": "Reception"
+}
